@@ -29,109 +29,336 @@
 
 <body>
 
-    <div class="row alert alert-warning">
-        <p class="text-center">This website is under development</p>
+<div class="row alert alert-warning">
+    <p class="text-center">This website is under development</p>
+</div>
+
+<header class="d-flex justify-content-between align-items-center p-1 px-md-4 bg-white border-bottom shadow-sm">
+    <div class="float-left">
+        <img src="./images/logo.png" width="100px" height="100px"></img>
     </div>
 
-    <header class="d-flex justify-content-between align-items-center p-1 px-md-4 bg-white border-bottom shadow-sm">
+    <div class="float-right">
+        <a class="btn btn-outline-primary" href="sign-in.html">Sign in</a>
+        <a class="btn btn-outline-primary" href="sign-up.html">Sign up</a>
+        <a class="btn btn-outline-primary" href="shopping-cart.html">Cart</a>
+    </div>
+</header>
 
-        <div class="float-left">
-            <img src="./images/logo.png" width="100px" height="100px"></img>
-        </div>
-
-        <div class="float-right">
-            <a class="btn btn-outline-primary" href="sign-in.html">Sign in</a>
-            <a class="btn btn-outline-primary" href="sign-up.html">Sign up</a>
-            <a class="btn btn-outline-primary" href="shopping-cart.html">Cart</a>
-        </div>
-
-    </header>
-
-    <div class="row">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+<div class="row">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="product-list.html">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About us</a>
-                        </li>
-                    </ul>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-list.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <section>
+
+                <!-- Section: Filters -->
+                <section>
+
+                    <h5>Filters</h5>
+
+                    <!-- Section: Condition -->
+                    <section class="mb-4">
+
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="new">
+                            <label class="form-check-label small text-uppercase card-link-secondary"
+                                   for="new">Sarees</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="used">
+                            <label class="form-check-label small text-uppercase card-link-secondary"
+                                   for="used">Blouse</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="collectible">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="collectible">Kurtis</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3 pb-1">
+                            <input type="checkbox" class="form-check-input filled-in" id="other">
+                            <label class="form-check-label small text-uppercase card-link-secondary"
+                                   for="other">Other</label>
+                        </div>
+
+                    </section>
+                    <!-- Section: Condition -->
+
+                    <!-- Section: Average -->
+                    <section class="mb-4">
+                        <h6 class="font-weight-bold mb-3">Avg. Customer Review</h6>
+                        <div>
+                            <ul class="rating list-inline mb-0">
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><p class="small text-uppercase card-link-secondary px-2">&
+                                    Up</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="rating list-inline mb-0">
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><p class="small text-uppercase card-link-secondary px-2">&
+                                    Up</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="rating list-inline mb-0">
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><p class="small text-uppercase card-link-secondary px-2">&
+                                    Up</p></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="rating list-inline mb-0">
+                                <li class="list-inline-item"><i class="fas fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><i class="far fa-star fa-sm text-primary"></i></li>
+                                <li class="list-inline-item"><p class="small text-uppercase card-link-secondary px-2">&
+                                    Up</p></li>
+                            </ul>
+                        </div>
+
+                    </section>
+                    <!-- Section: Average -->
+
+                    <!-- Section: Price -->
+                    <section class="mb-4">
+
+                        <h6 class="font-weight-bold mb-3">Price</h6>
+
+                        <div class="form-check pl-0 mb-3">
+                            <input type="radio" class="form-check-input" id="under25" name="materialExampleRadios">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="under25">Under
+                                £25</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="radio" class="form-check-input" id="2550" name="materialExampleRadios">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="2550">£25 to
+                                £50</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="radio" class="form-check-input" id="50100" name="materialExampleRadios">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="50100">£50 to
+                                £100</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="radio" class="form-check-input" id="100200" name="materialExampleRadios">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="100200">£100
+                                to
+                                £200</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="radio" class="form-check-input" id="200above" name="materialExampleRadios">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="200above">£200
+                                &
+                                Above</label>
+                        </div>
+                        <form>
+                            <div class="d-flex align-items-center mt-4 pb-1">
+                                <div class="md-form md-outline my-0">
+                                    <input id="from" type="text" class="form-control mb-0">
+                                    <label for="form">$ Min</label>
+                                </div>
+                                <p class="px-2 mb-0 text-muted"> - </p>
+                                <div class="md-form md-outline my-0">
+                                    <input id="to" type="text" class="form-control mb-0">
+                                    <label for="to">$ Max</label>
+                                </div>
+                            </div>
+                        </form>
+
+                    </section>
+                    <!-- Section: Price -->
+
+                    <!-- Section: Price version 2 -->
+                    <section class="mb-4">
+
+                        <h6 class="font-weight-bold mb-3">Price</h6>
+
+                        <div class="slider-price d-flex align-items-center my-4">
+                            <span class="font-weight-normal small text-muted mr-2">$0</span>
+                            <form class="multi-range-field w-100 mb-1">
+                                <input id="multi" class="multi-range" type="range"/>
+                            </form>
+                            <span class="font-weight-normal small text-muted ml-2">$100</span>
+                        </div>
+
+                    </section>
+                    <!-- Section: Price version 2 -->
+
+                    <!-- Section: Size -->
+                    <section class="mb-4">
+
+
+                        <h6 class="font-weight-bold mb-3">Size</h6>
+
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="34">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="34">34</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="36">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="36">36</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="38">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="38">38</label>
+                        </div>
+                        <div class="form-check pl-0 mb-3">
+                            <input type="checkbox" class="form-check-input filled-in" id="40">
+                            <label class="form-check-label small text-uppercase card-link-secondary" for="40">40</label>
+                        </div>
+                        <a class="btn btn-link text-muted p-0" data-toggle="collapse" href="#collapseExample"
+                           aria-expanded="false" aria-controls="collapseExample">
+                            More
+                        </a>
+                        <div class="collapse pt-3" id="collapseExample">
+                            <div class="form-check pl-0 mb-3">
+                                <input type="checkbox" class="form-check-input filled-in" id="42">
+                                <label class="form-check-label small text-uppercase card-link-secondary"
+                                       for="42">42</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="checkbox" class="form-check-input filled-in" id="44">
+                                <label class="form-check-label small text-uppercase card-link-secondary"
+                                       for="44">44</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="checkbox" class="form-check-input filled-in" id="46">
+                                <label class="form-check-label small text-uppercase card-link-secondary"
+                                       for="46">46</label>
+                            </div>
+                            <div class="form-check pl-0 mb-3">
+                                <input type="checkbox" class="form-check-input filled-in" id="50">
+                                <label class="form-check-label small text-uppercase card-link-secondary"
+                                       for="50">50</label>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- Section: Size -->
+
+                    <!-- Section: Color -->
+                    <section class="mb-4">
+                        <h6 class="font-weight-bold mb-3">Color</h6>
+                        <div>
+                            <label class="btn btn-primary btn-circle">
+                                <input type="checkbox" autocomplete="off">
+                            </label>
+
+                            <label class="btn btn-primary btn-circle">
+                                <input type="checkbox" autocomplete="off">
+                            </label>
+
+                        </div>
+
+
+                    </section>
+                    <!-- Section: Color -->
+
+                </section>
+                <!-- Section: Filters -->
+
+            </section>
+        </div>
+        <div class="col-md-9">
+            <div class="row text-center pt-4">
+                <div class="col">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Sarees</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"></h1>
+                            <img src="./images/saree.jpg" width="150px" height="200px"></img>
+                            <a type="button" class="w-100 btn btn-lg btn-outline-primary mt-2" href="product-list.html">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Kurtis</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"></h1>
+                            <img src="./images/kurti.jpg" width="150px" height="200px"></img>
+                            <a type="button" class="w-100 btn btn-lg btn-outline-primary mt-2" href="product-list.html">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="my-0 fw-normal">Blouses</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"></h1>
+                            <img src="./images/blouse.jpg" width="150px" height="200px"></img>
+                            <a type="button" class="w-100 btn btn-lg btn-outline-primary mt-2" href="product-list.html">Order
+                                Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
 
+</main>
 
-    <main class="container">
-        <div class="row row-cols-1 row-cols-md-3 text-center pt-4">
-            <div class="col">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">Sarees</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title"></h1>
-                        <img src="./images/saree.jpg" width="150px" height="200px"></img>
-                        <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="product-list.html">Order
-                            Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">Kurtis</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title"></h1>
-                        <img src="./images/kurti.jpg" width="150px" height="200px"></img>
-                        <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="product-list.html">Order
-                            Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class=" col">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">Blouses</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title"></h1>
-                        <img src="./images/blouse.jpg" width="150px" height="200px"></img>
-                        <a type="button" class="w-100 btn btn-lg btn-outline-primary" href="product-list.html">Order
-                            Now</a>
-                    </div>
-                </div>
-            </div>
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-12 col-md float-right">
+            <img class="mx-auto d-block" src="./images/Logo-Card.png"></img>
+            <p align="center"><small>A Website Made by Prabha's Collections Ltd.</small></p>
+            <p align="center"><small>© Copyright Prabha's Collections Ltd. 2020. All Rights Reserved.
+                Terms and Conditions apply</small></p>
+
         </div>
-    </main>
-
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-            <div class="col-12 col-md float-right">
-
-                <img src="./images/Logo-Card.png" class="center"></img>
-                <p align="center"><small>A Website Made by Prabha's Collections Ltd.</small></p>
-                <p align="center"><small>© Copyright Prabha's Collections Ltd. 2020. All Rights Reserved.
-                        Terms and Conditions apply</small></p>
-
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 
